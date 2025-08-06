@@ -48,12 +48,11 @@ header > nav > ul{
 } 
 
 header > nav > ul > p {
-    padding-top: 1rem ;
-    padding-bottom: 1rem;
-    padding-left: 4rem;
+    padding: 1rem 10rem;
     color: #2463eb;
     font-size: 1.5rem;
     font-weight: 700;
+    text-wrap: nowrap;
 }
 
 header > nav > ul > li > a {
@@ -72,20 +71,21 @@ header > nav > ul > li:nth-child(2) {
 }
 
 header > nav > ul > li:nth-last-child(1) {
-    margin-right: 5rem;
+    margin-right: 10rem;
 }
 
 header > section.hero-section {
     width: 100%;
     height: 55vh;
+    min-height: 300px;
     background-image: linear-gradient(to right ,#f7f9fb, #e9eef3);
     display: flex;
     box-shadow: -1px -2px 5px 0px #e1e5e8 inset;
     -webkit-box-shadow: -1px -2px 5px 0px #e1e5e8 inset;
     -moz-box-shadow: -1px -2px 5px 0px #e1e5e8 inset;
-    box-shadow: -1px 2px 5px 0px #e1e5e8 inset;
-    -webkit-box-shadow: -1px 2px 5px 0px #e1e5e8 inset;
-    -moz-box-shadow: -1px 2px 5px 0px #e1e5e8 inset;
+    box-shadow: -1px -2px 5px 0px #e1e5e8 inset;
+    -webkit-box-shadow: -1px -2px 5px 0px #e1e5e8 inset;
+    -moz-box-shadow: -1px -2px 5px 0px #e1e5e8 inset;
 }
 
 header > section.hero-section > div.hero-content {
@@ -93,7 +93,7 @@ header > section.hero-section > div.hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 4rem;
+    padding-left: 10rem;
 }
 header > section.hero-section > div.hero-content > h1{
     font-size: 2.5rem;
@@ -113,9 +113,10 @@ header > section.hero-section > div.hero-content > button{
 }
 header > section.hero-section > div.hero-photo {
     display: flex;
-    justify-content: right;
+    flex: 1;
+    justify-content: center;
     align-items: center;
-    padding-left: 20%; 
+    padding-left: 4rem;
 }
 
 
@@ -127,5 +128,6 @@ header > section.hero-section > div.hero-photo > div.circle {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
