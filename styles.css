@@ -34,25 +34,32 @@ div.container {
     /* width: 100%;
     max-width: 1200px;
     min-height: 100vh; */
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
 header > nav{
     width: 100%;
     height: 10vh;
+    min-height: 30px;
+    /* overflow: hidden; */
 } 
 header > nav > ul{
     list-style: none;
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
+    /* overflow: hidden; */
 } 
 
 header > nav > ul > p {
-    padding: 1rem 10rem;
+    
+    margin-left: 4rem;
     color: #2463eb;
     font-size: 1.5rem;
     font-weight: 700;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 header > nav > ul > li > a {
@@ -71,7 +78,8 @@ header > nav > ul > li:nth-child(2) {
 }
 
 header > nav > ul > li:nth-last-child(1) {
-    margin-right: 10rem;
+    margin-right: 4rem;
+    /* padding-right: 10rem; */
 }
 
 header > section.hero-section {
@@ -93,14 +101,15 @@ header > section.hero-section > div.hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10rem;
+    margin-left: 4rem;
+    /* padding-left: 4rem; */
 }
 header > section.hero-section > div.hero-content > h1{
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: calc(3rem - (100vh * 0.02));
 }
 header > section.hero-section > div.hero-content > p{
-    margin-bottom: 3rem;
+    margin-bottom: calc(4rem - (100vh * 0.02));
+
 }
 header > section.hero-section > div.hero-content > button{
     color: white;
