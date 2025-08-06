@@ -7,12 +7,35 @@
 body {
     width: 100%;
     min-height: 100vh;
+    font-size: 1rem;
+    line-height: 1.6rem;
     font-family: 'Segoe UI', apple-system, Geneva, BlinkMacSystemFont, sans-serif;
+    
+}
+
+p {
+    color: #6f737a;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 div.container {
-    width: 100%;
-    min-height: 100vh;
+    /* width: 100%;
+    max-width: 1200px;
+    min-height: 100vh; */
+    margin-right: auto;
+    margin-left: auto;
 }
 header > nav{
     width: 100%;
@@ -27,9 +50,9 @@ header > nav > ul{
 header > nav > ul > p {
     padding-top: 1rem ;
     padding-bottom: 1rem;
-    padding-left: 5rem;
+    padding-left: 4rem;
     color: #2463eb;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -39,6 +62,10 @@ header > nav > ul > li > a {
     padding: 1rem;
     color: black;
 }
+header > nav > ul > li > a:hover {
+    color: white;
+    background-color: #7ba1f3;
+}
 
 header > nav > ul > li:nth-child(2) {
     margin-left: auto;
@@ -47,3 +74,58 @@ header > nav > ul > li:nth-child(2) {
 header > nav > ul > li:nth-last-child(1) {
     margin-right: 5rem;
 }
+
+header > section.hero-section {
+    width: 100%;
+    height: 55vh;
+    background-image: linear-gradient(to right ,#f7f9fb, #e9eef3);
+    display: flex;
+    box-shadow: -1px -2px 5px 0px #e1e5e8 inset;
+    -webkit-box-shadow: -1px -2px 5px 0px #e1e5e8 inset;
+    -moz-box-shadow: -1px -2px 5px 0px #e1e5e8 inset;
+    box-shadow: -1px 2px 5px 0px #e1e5e8 inset;
+    -webkit-box-shadow: -1px 2px 5px 0px #e1e5e8 inset;
+    -moz-box-shadow: -1px 2px 5px 0px #e1e5e8 inset;
+}
+
+header > section.hero-section > div.hero-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+}
+header > section.hero-section > div.hero-content > h1{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+header > section.hero-section > div.hero-content > p{
+    margin-bottom: 3rem;
+}
+header > section.hero-section > div.hero-content > button{
+    color: white;
+    font-weight: 700;
+    background-color: #2463eb;
+    width: 8rem;
+    padding: 18px;
+    border-radius: 7px;
+    border: none;
+}
+header > section.hero-section > div.hero-photo {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-left: 20%; 
+}
+
+
+header > section.hero-section > div.hero-photo > div.circle {
+    width: 300px;
+    height: 300px;
+    background-color: #e2e8f0;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
