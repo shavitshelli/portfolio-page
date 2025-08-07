@@ -17,6 +17,19 @@
                     <li><a href="">Projects</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
+                <div class="hamb-menu">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
+                        </svg>
+                    </i>
+                    <div class="drop-content">
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Projects</a> 
+                        <a href="">Contact</a>  
+                    </div>
+                </div>
             </nav>
             <section class="hero-section">
                 <div class="hero-content">
@@ -139,5 +152,23 @@
         </footer>
     </div>
     
+    <script>
+        // Get the hamburger menu and dropdown content
+        const hambMenu = document.querySelector('.hamb-menu');
+        const dropContent = document.querySelector('.drop-content');
+        
+        // Add click event listener to hamburger menu
+        hambMenu.addEventListener('click', function() {
+            // Toggle the dropdown visibility
+            dropContent.classList.toggle('show');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!hambMenu.contains(event.target)) {
+                dropContent.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>

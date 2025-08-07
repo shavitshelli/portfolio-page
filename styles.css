@@ -42,9 +42,10 @@ div.container {
 }
 header > nav{
     width: 100%;
-    min-height: 20px;
+    min-height: 55px;
     display: flex;
     align-items: center;
+    padding: 0 8rem ;
 } 
 header > nav > ul{
     list-style: none;
@@ -52,8 +53,12 @@ header > nav > ul{
     align-items: center;
     width: 100%;
     max-width: 100%;
-    padding: 0 8rem ;
+    
 } 
+
+header > nav > div.hamb-menu {
+    display: none;
+}
 
 header > nav >  p {
     
@@ -63,13 +68,23 @@ header > nav >  p {
     white-space: nowrap;
 }
 
-header > nav > ul > li > a {
+div.hamb-menu > div.drop-content {
+    background-color: #d1d8e0;
+}
+
+header > nav > ul > li > a , div.hamb-menu > div.drop-content > a {
     text-decoration: none;
     display: inline-block;
     padding: 1rem;
     color: black;
+    width: 100%;
 }
-header > nav > ul > li > a:hover {
+div.hamb-menu > div.drop-content  {
+    min-width: 150px;
+    right: 0;
+    top:100%;
+}
+header > nav > ul > li > a:hover , div.hamb-menu > div.drop-content > a:hover {
     color: white;
     background-color: #7ba1f3;
 }
@@ -338,7 +353,7 @@ div.links {
     flex-wrap: nowrap;
 }
 
-svg {
+div.links > a > svg {
     width: 4rem;
     height: 4rem;
     transition: all 0.3s ease;
@@ -371,7 +386,7 @@ button:hover , header > section.hero-section > div.hero-content > button:hover {
         margin-right:0;
     }
 
-    header > nav > ul{ 
+    header > nav { 
         padding: 0 4rem ;
     } 
 
@@ -432,5 +447,41 @@ button:hover , header > section.hero-section > div.hero-content > button:hover {
 }
 
 @media(max-width:600px){
+
+    header > nav {
+        position: relative;
+        align-items:center;
+        padding: 0 1.5rem ;
+        
+    }
+
+    header > nav > ul{
+        display: none;
+    } 
+
+    header > nav > div.hamb-menu  {
+        display: block;
+        margin-left: auto;
+        fill: #837f7f;
+        position: relative;
+    }
+    header > nav > div.hamb-menu > i > svg {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    div.hamb-menu > div.drop-content {
+        position:absolute;
+        display: none;
+    }
+
+    div.hamb-menu > div.drop-content > a::after {
+        content: ">";
+        float: right;
+    }
+
+    div.hamb-menu:hover > div.drop-content{
+        display: block;
+    }
 
 }
