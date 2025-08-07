@@ -124,14 +124,17 @@ header > section.hero-section > div.hero-content > p{
     margin-bottom: calc(4rem - (100vh * 0.02));
 
 }
-header > section.hero-section > div.hero-content > button{
+header > section.hero-section > div.hero-content > a{
+    display: inline-block;
+    text-decoration: none;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     background-color: #2463eb;
-    width: 8rem;
+    width: 10rem;
     padding: 18px;
     border-radius: 7px;
     border: none;
+    text-align: center;
 }
 header > section.hero-section > div.hero-photo {
     display: flex;
@@ -347,6 +350,16 @@ div.my-info > p{
     white-space: nowrap;
 }
 
+div.my-info > p > a {
+    color: #6f737a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+div.my-info > p > a:hover {
+    color: #2463eb;
+}
+
 div.links {
     display: flex;
     flex-wrap: nowrap;
@@ -375,7 +388,7 @@ footer {
     justify-content: center;
 }
 
-button:hover , header > section.hero-section > div.hero-content > button:hover {
+button:hover , header > section.hero-section > div.hero-content > a:hover {
     background-color: #1f51bc;
 }
 
@@ -405,7 +418,7 @@ button:hover , header > section.hero-section > div.hero-content > button:hover {
         margin-bottom: 1rem;
     }
 
-    header > section.hero-section > div.hero-content > button{
+    header > section.hero-section > div.hero-content > a{
         padding: 12px;
     }
 
