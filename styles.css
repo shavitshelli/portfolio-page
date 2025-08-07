@@ -219,16 +219,17 @@ main > section.projects  > h2{
 main > section.projects > div.cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-between;
     align-items: flex-start;
-    /* margin: -0.5rem; */
+   
 }
 
 
 div.cards > div.card {
-    width: 30%;
-    height: 400px;
-    margin: 1rem;
+    width: 23%;
+    height: 420px;
+    margin: 0.3rem;
+    min-width: 270px;
 }
 
 div.card > div.project-image {
@@ -242,7 +243,7 @@ div.card > div.project-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #97a1b6;
+    background-color: white;
     height: 210px;
     padding: 2rem;
     border-bottom-left-radius: 10px;
@@ -251,6 +252,9 @@ div.card > div.project-info {
 
 div.card > div.project-info > h3 {
     font-size: larger;
+}
+div.card > div.project-info > p {
+    font-size: 0.9rem;
 }
 
 div.card > div.project-info > a {
@@ -282,7 +286,7 @@ div.card > div.project-info > a {
         padding: 2.5rem 3rem;
     }
     main > section.projects {
-        padding: 2.5rem 3rem;
+        padding: 2.5rem 2rem;
     }
 
     section.info > div.about { 
@@ -294,6 +298,9 @@ div.card > div.project-info > a {
     }
 
     div.cards > div.card {
-        width: 48%;
+        width: 43%;
+        margin: 0.2rem;
+        line-height: 1.2rem;
+        min-width: 260px;
     }
 }
