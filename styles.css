@@ -150,7 +150,6 @@ header > section.hero-section > div.hero-photo > div.circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 main > section.info {
@@ -484,4 +483,74 @@ button:hover , header > section.hero-section > div.hero-content > button:hover {
         display: block;
     }
 
+    header > section.hero-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        height: 80vh;
+    }
+
+    header > section.hero-section > div.hero-content {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 0  ;
+    }
+
+    header > section.hero-section > div.hero-photo > div.circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+
+    main > section.info {
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+        text-align: center;
+    }
+
+    section.info > div.about {
+        padding-right: 0;
+        margin-bottom: 4rem;
+    }
+
+    main > section.projects {
+        padding: 3rem 1.5rem;
+        
+    }
+
+    div.cards > div.card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    main > section.contact-form {
+        padding: 3rem 1.5rem;
+    }
+
+    div.contact-container {
+        flex-direction: column;
+    }
+
+    div.contact-container > form{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 3rem;   
+    }
+    form > button{
+        width: 100%;
+        
+    }
+
+    div.contact-container > div.my-info{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    div.links {
+        display: flex;
+        justify-content: center;
+    }
 }
