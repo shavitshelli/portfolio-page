@@ -566,4 +566,8 @@ button:hover , header > section.hero-section > div.hero-content > a:hover {
         display: flex;
         justify-content: center;
     }
+
+    div.card > div.project-info > a {
+        width: 100%;
+    }
 }
