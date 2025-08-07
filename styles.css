@@ -281,37 +281,32 @@ div.contact-container {
     display: flex;
 }
 
-div.contact-container > div.contact-details{
+div.contact-container > form{
     width: 60%;
     padding: 2rem;
 }
-div.contact-container > div.my-info{
-    width: 40%;
-}
-
-
- div.contact-details > label {
+ form > label {
     display: block;
 }
 
-div.contact-details > input , div.contact-details > textarea {
+form > input , form > textarea {
     border-radius: 6px;
     margin-bottom: 1rem;
     border: 2px solid #d1d8e0;
 }
 
 
- div.contact-details > input {
+ form > input {
     display: block;
     width: 100%;
     height: 2rem;
 }
- div.contact-details > textarea {
+form > textarea {
     width: 100% !important;
     height: 7rem !important;
 }
 
-div.contact-details > button{
+form > button{
     color: white;
     font-weight: 700;
     background-color: #2463eb;
@@ -319,6 +314,33 @@ div.contact-details > button{
     padding: 10px 18px;
     border-radius: 7px;
     border: none;
+}
+
+div.contact-container > div.my-info{
+    width: 40%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+div.my-info > h3{
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+div.my-info > p{
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+}
+
+div.links {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+svg {
+    width: 4rem;
+    height: 4rem;
 }
 
 
@@ -355,5 +377,14 @@ div.contact-details > button{
         margin: 0.2rem;
         line-height: 1.2rem;
         min-width: 260px;
+    }
+
+    main > section.contact-form {
+        padding: 2.5rem 2rem;
+    }
+
+    div.contact-container > div.my-info,  div.contact-container >form{
+        flex: 1;
+        padding: 1rem;
     }
 }
