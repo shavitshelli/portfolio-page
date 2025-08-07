@@ -43,6 +43,8 @@ div.container {
 header > nav{
     width: 100%;
     min-height: 20px;
+    display: flex;
+    align-items: center;
 } 
 header > nav > ul{
     list-style: none;
@@ -53,7 +55,7 @@ header > nav > ul{
     padding: 0 8rem ;
 } 
 
-header > nav > ul > p {
+header > nav >  p {
     
     color: #2463eb;
     font-size: 1.5rem;
@@ -72,7 +74,7 @@ header > nav > ul > li > a:hover {
     background-color: #7ba1f3;
 }
 
-header > nav > ul > li:nth-child(2) {
+header > nav > ul > li:nth-child(1) {
     margin-left: auto;
 }
 header > nav > ul > li:nth-last-child(1) {
@@ -429,3 +431,6 @@ button:hover , header > section.hero-section > div.hero-content > button:hover {
     }
 }
 
+@media(max-width:600px){
+
+}
