@@ -31,9 +31,7 @@ h3 {
 }
 main {
     width: 100%;
-    height: 50vh;
     min-height: 300px;
-    /* padding: 5rem 8rem; */
 }
 
 
@@ -83,7 +81,7 @@ header > nav > ul > li:nth-last-child(1) {
 
 header > section.hero-section {
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     min-height: 300px;
     background-image: linear-gradient(to right ,#f7f9fb, #e9eef3);
     display: flex;
@@ -341,6 +339,28 @@ div.links {
 svg {
     width: 4rem;
     height: 4rem;
+    transition: all 0.3s ease;
+    fill: #2463eb;
+}
+
+.links a:hover svg {
+    transform: scale(1.1);
+    fill: #1d4ed8;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    color: white;
+    background-color: #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover , header > section.hero-section > div.hero-content > button:hover {
+    background-color: #1f51bc;
 }
 
 
@@ -355,6 +375,26 @@ svg {
 
     header > section.hero-section {
         padding: 0 4rem;
+    }
+
+    section.hero-section > div.hero-content , section.hero-section > div.hero-photo {
+        flex: 1;
+    }
+
+    header > section.hero-section > div.hero-content > h1 {
+        margin-bottom: 1rem;
+        font-size: 2.3rem;
+    }
+    header > section.hero-section > div.hero-content > p {
+        margin-bottom: 1rem;
+    }
+
+    header > section.hero-section > div.hero-content > button{
+        padding: 12px;
+    }
+
+    header > section.hero-section > div.hero-photo {
+        padding-left: 0;
     }
 
     main > section.info {
@@ -388,3 +428,4 @@ svg {
         padding: 1rem;
     }
 }
+
